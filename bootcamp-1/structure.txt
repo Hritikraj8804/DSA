@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+struct student
+{
+    char rollno[10];
+    char name[10];
+    double per;
+    int bc;
+};
+typedef struct student STD;
+
+int main()
+{
+    STD s1;
+    scanf("%s",s1.rollno);
+    scanf(" %[^\n]s",s1.name);
+    scanf("%lf",&s1.per);
+    scanf("%d",&s1.bc);
+    printf("%s %s %lf %d",s1.rollno,s1.name,s1.per,s1.bc);
+
+}

@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct student
+{
+    int bc;
+    char roll[10];
+};
+typedef struct student S;
+int main()
+{
+    S *s1;
+    s1 = (S *)malloc(sizeof(S));// n * 4(bit of int)
+    // for (i = 0; i < n; i++)
+    // {
+        scanf("%d",&s1->bc);
+        scanf(" %s",&s1->roll);
+    // }
+    // for (i = 0; i < n; i++)
+    // {
+        printf("%d %s",s1->bc,s1->roll);
+    // }
+}
