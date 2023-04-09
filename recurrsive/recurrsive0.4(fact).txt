@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int fact(int i);
+
+int main() {
+    int f=fact(1);
+    printf("%d\n",f);
+    return 0;
+}
+
+int fact(int i){
+    if(i==5)
+    {
+        return 5;
+    }
+   return i*fact(i+1);
+}
