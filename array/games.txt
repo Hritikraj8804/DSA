@@ -1,0 +1,14 @@
+*IBM:
+-->cognimind/reasoning/Shortcut
+-->cognimind/perception/visual perception/Resemble
+-->Quantitative skills/Quantitative skills/Tally up
+-->Numbubbles
+-->cognimind/perception/spatial/Grid lock
+
+*COPGEMINI:
+-->cognimind/reasoning/processing speed/Deductive Challenge
+-->cognimind/logical thinking/power of logical thinking/Switch Challenge
+-->Grid Challenge
+-->cognimind/perception/recogniation/Inductive Challenge
+-->cognimind/reasoning/Motin CHallenge
+-->Quantitative skills/Quantitative skills/digit challenge

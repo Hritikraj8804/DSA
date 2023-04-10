@@ -1,0 +1,42 @@
+#include<stdio.h>
+int binarys(int arr[],int n,int t)
+{
+    int low=0;
+    int high=n-1;
+    while(low<=high)
+    {
+        int mid=(low+high)>>1;
+        if(arr[mid]==t) return mid;
+        else if(arr[mid]>t)
+        {
+            high=mid-1;
+        }
+        else {
+            low= mid+1;
+        }
+    }
+    return -1;
+}
+
+int linears(int arr[],int n,int t)
+{
+    int i;
+    for(i=0;i<n;i++)
+    {
+        if(arr[i]==t) return i;
+    }
+}
+int main()
+{
+    int n,i,t;
+    scanf("%d%d",&n,&t);
+    int arr[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    int ind1= linears(arr,n,t);
+    int ind2=binarys(arr,n,t);
+    printf("By linear search: %d\n",ind1);
+    printf("By binary search: %d\n",ind2);
+}
