@@ -1,0 +1,17 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    struct student
+    {
+        int roll;
+        char name[20];
+        float per;
+    }std;
+  
+    scanf("%d%s%f",&std.roll,std.name,&std.per);
+    printf("%d\n%s\n%f",std.roll,std.name,std.per);
+
+    return 0;
+}

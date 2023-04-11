@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+struct dob
+{
+    int day;
+    int month;
+    int year;
+};
+struct student 
+{
+    int roll;
+    char name[20];
+    struct dob date;
+};
+int main()
+{
+    struct student s;
+    scanf("%d",&s.roll);
+    scanf("%s",s.name);
+    scanf("%d%d%d",&s.date.day,&s.date.month,&s.date.year);
+  
+   printf("roll no: %d\n",s.roll);
+    printf("name: %s\n",s.name);
+    printf("date: %d-%d-%d\n",s.date.day,s.date.month,s.date.year);
+    
+}

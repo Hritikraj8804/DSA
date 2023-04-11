@@ -1,0 +1,31 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+struct employe
+    {
+        int id;
+        char name[20];
+        int salary;
+    };
+
+int main() {
+    // Write C code here
+    struct employe emp[10];
+    int i,n;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d%s%d",&emp[i].id,emp[i].name,&emp[i].salary);
+    }
+        int a;
+        scanf("%d",&a);
+    for(i=1;i<=n;i++)
+    {
+        if(i==a)
+        {
+        printf("%d  %s  %d\n",emp[i].id,emp[i].name,emp[i].salary);
+        }
+    }
+    
+
+    return 0;
+}
